@@ -14,7 +14,7 @@ delay(2000);
 
 void loop() {
 
-_SERVO_SPEED = (60 * 1000) / 180;
+_SERVO_SPEED = 333;
 
 for (int pos = 0; pos <= 180; pos += 1) {
 myservo.write(pos);
@@ -23,7 +23,7 @@ delay(_SERVO_SPEED);
 
 delay(5000);
 
-_SERVO_SPEED = (300 * 1000) / 90;
+_SERVO_SPEED = 3333;
 
 for (int pos = 180; pos >= 90; pos -= 1) {
 myservo.write(pos);
